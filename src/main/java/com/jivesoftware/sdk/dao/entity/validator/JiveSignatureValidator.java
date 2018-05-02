@@ -15,6 +15,7 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
+import com.google.common.collect.Maps;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -22,8 +23,6 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import com.jivesoftware.sdk.dao.entity.JiveInstance;
-
-import jersey.repackaged.com.google.common.collect.Maps;
 
 /**
  * Created by rrutan on 1/30/14.

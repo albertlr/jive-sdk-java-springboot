@@ -20,7 +20,7 @@ package com.jivesoftware.sdk.event;
 
 import java.util.Map;
 
-import jersey.repackaged.com.google.common.collect.Maps;
+import com.google.common.collect.Maps;
 
 /**
  * Created by rrutan on 2/8/14.

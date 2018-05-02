@@ -7,7 +7,7 @@ import javax.ws.rs.BadRequestException;
 import javax.ws.rs.NotAuthorizedException;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.embedded.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +29,7 @@ public class JiveConfiguration {
 	private JiveInstanceRepository jiveInstanceDAO;
 	
 	@Bean
-	public FilterRegistrationBean jiveSignedFetchValidationFilter() { 
+	public FilterRegistrationBean jiveSignedFetchValidationFilter() {
 		FilterRegistrationBean registration = new FilterRegistrationBean(new JiveSignedFetchValidationFilter(jiveInstanceDAO));
 		registration.setOrder(1);
 		registration.setEnabled(true);

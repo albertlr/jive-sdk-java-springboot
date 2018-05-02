@@ -21,10 +21,9 @@ package com.jivesoftware.sdk.api.tile.data;
 import java.util.List;
 import java.util.Map;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
-
-import jersey.repackaged.com.google.common.collect.Lists;
-import jersey.repackaged.com.google.common.collect.Maps;
 
 /**
  * Created by rrutan on 2/9/14.

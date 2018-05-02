@@ -18,25 +18,18 @@
 
 package com.jivesoftware.sdk.client;
 
-import java.util.Map;
-
-import javax.ws.rs.client.AsyncInvoker;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Invocation;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.HttpHeaders;
-
+import com.google.common.collect.Maps;
+import com.jivesoftware.sdk.client.filter.DebugClientResponseFilter;
+import com.jivesoftware.sdk.client.filter.StripAllowIllegalResourceCallFilter;
 import org.apache.commons.codec.binary.Base64;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.jivesoftware.sdk.client.filter.DebugClientResponseFilter;
-import com.jivesoftware.sdk.client.filter.StripAllowIllegalResourceCallFilter;
-
-import jersey.repackaged.com.google.common.collect.Maps;
+import javax.ws.rs.client.*;
+import javax.ws.rs.core.HttpHeaders;
+import java.util.Map;
 
 /**
  * Created by rrutan on 2/13/14.
@@ -167,7 +160,5 @@ public class BaseJiveClient {
                     '}';
         }
     } // end class
-
-
 
 } // end class

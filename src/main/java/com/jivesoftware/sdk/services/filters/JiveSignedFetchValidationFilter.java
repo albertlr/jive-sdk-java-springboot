@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.BadRequestException;
 import javax.ws.rs.NotAuthorizedException;
 
+import com.google.common.collect.Maps;
 import org.apache.commons.codec.binary.Base64;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,8 +30,6 @@ import org.springframework.http.HttpStatus;
 import com.jivesoftware.sdk.dao.JiveInstanceRepository;
 import com.jivesoftware.sdk.dao.entity.JiveInstance;
 import com.jivesoftware.sdk.util.JiveSDKUtils;
-
-import jersey.repackaged.com.google.common.collect.Maps;
 
 public class JiveSignedFetchValidationFilter implements Filter {
     private static final Logger logger = LoggerFactory.getLogger(JiveSignedFetchValidationFilter.class);

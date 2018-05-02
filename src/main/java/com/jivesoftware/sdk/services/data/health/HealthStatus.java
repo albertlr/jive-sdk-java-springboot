@@ -3,13 +3,13 @@ package com.jivesoftware.sdk.services.data.health;
 import java.util.Date;
 import java.util.List;
 
+import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.jivesoftware.sdk.util.DateTimeUtils;
 
 import io.swagger.annotations.ApiModel;
-import jersey.repackaged.com.google.common.collect.Lists;
 
 @ApiModel( value = "HealthStatus", description = "TODO: HealthStatus" )
 public class HealthStatus {
